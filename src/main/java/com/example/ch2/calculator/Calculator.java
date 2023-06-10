@@ -1,4 +1,4 @@
-package com.example.calculator;
+package com.example.ch2.calculator;
 
 public class Calculator {
     int add(int i, int j){

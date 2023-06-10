@@ -1,4 +1,4 @@
-package com.example.calculator;
+package com.example.ch2.calculator;
 
 public class CalculatorTest {
     public static void main(String[] args) {

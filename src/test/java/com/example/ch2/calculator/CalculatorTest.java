@@ -1,5 +1,6 @@
-package com.example.calculator;
+package com.example.ch2.calculator;
 
+import com.example.ch2.calculator.Calculator;
 import org.junit.jupiter.api.*;
 
 public class CalculatorTest {
