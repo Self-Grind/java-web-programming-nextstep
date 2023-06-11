@@ -1,7 +1,5 @@
 package com.example.ch2.stringcalculator;
 
-import java.lang.reflect.Array;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,18 +10,21 @@ public class StringCalculator {
      * 숫자 계산
      * regex -
      */
-    public int add(String text) {
+    public int addV1(String text) {
         String num = "";
         String pattern = ":,";
 
         if (text == null || text.isEmpty())
             return 0;
         // 만약 커스텀 구분자가 있다면 커스텀 구분자까지 pattern에 포함한다.
+        // V
         if (text.contains("\n")) {
             num = text.substring(text.indexOf("\n") + 1);
             pattern += text.substring(text.indexOf("/") + 2, text.indexOf("\n"));
         }
+
         //음수가 포함됐을 경우 RuntimeException
+        //V
         if (num.contains("-")) throw new RuntimeException();
 
         System.out.println("num = " + num);
@@ -34,7 +35,7 @@ public class StringCalculator {
         for (String s : lst) {
             answer += Integer.parseInt(s);
         }
-//        System.out.println("answer = " + answer);
+
         return answer;
     }
 

@@ -17,8 +17,9 @@ public class StringCalculatorTest {
 
     @Test
     void addText(){
-        String input = "//.\n1,2.3,4:5";
-        Assertions.assertThat(stringCalculator.add(input)).isEqualTo(15);
+//        String input = "//.\n1,2,3,4:5";
+        String input = "4";
+        Assertions.assertThat(stringCalculator.addV1(input)).isEqualTo(15);
 
     }
 
